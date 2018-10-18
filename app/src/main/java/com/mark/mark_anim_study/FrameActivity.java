@@ -21,13 +21,17 @@ public class FrameActivity extends AppCompatActivity {
 
         img = findViewById(R.id.img);
 
+        doMethod();
+
+    }
+
+    private void doMethod() {
         //方法一
 //        img.setBackgroundResource(R.drawable.frame_anim);
 //        animationDrawable = (AnimationDrawable) img.getBackground();
         //方法二
         animationDrawable = (AnimationDrawable) getResources().getDrawable(R.drawable.frame_anim);
         img.setBackground(animationDrawable);
-
     }
 
     /*
